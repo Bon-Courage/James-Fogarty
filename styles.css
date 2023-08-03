@@ -17,12 +17,16 @@ ul {
     height: auto;
     border-radius: 50%;
     border: 10px goldenrod solid;
-    margin: 20px;
+    margin: 1rem;
 }
 
 
 .list-item {
     padding-left: 15px;
+}
+
+h1.welcome-header {
+    line-height: 0px;
 }
 
 /* Flex Controls */
@@ -33,6 +37,7 @@ ul {
     justify-content: flex-end;
     background-color: rgb(230, 250, 250);
     padding-inline-start: 20px;
+    min-width: min-content;
 }
 
 .navbar-list {
@@ -45,6 +50,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to top right, rgb(41, 10, 45), rgb(245, 220, 249));
+    border-bottom: 3px solid black;
 
 }
 
@@ -52,15 +59,22 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: lightblue solid 3px;
+    border: rgb(21, 145, 187) solid 5px;
     max-width: 60%;
     border-radius: 200px;
     margin: 128px 78px;
-    min-width: fit-content;
-    padding: 30px;
+    min-width: min-content;
+    padding: 40px;
+    background-color: aqua;
+    box-shadow: 0px 0px 30px black;
 }
 
 .welcome-text {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
+}
+
+.welcome-button {
+    align-self: center;
 }
