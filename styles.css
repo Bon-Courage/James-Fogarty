@@ -1,0 +1,66 @@
+/* Style Section */
+ul {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.header-picture {
+    max-width: 50px;
+    max-height: auto;
+    border-radius: 50%;
+    border: solid goldenrod 5px;
+}
+
+.welcome-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px goldenrod solid;
+    margin: 20px;
+}
+
+
+.list-item {
+    padding-left: 15px;
+}
+
+/* Flex Controls */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(230, 250, 250);
+    padding-inline-start: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: lightblue solid 3px;
+    max-width: 60%;
+    border-radius: 200px;
+    margin: 128px 78px;
+    min-width: fit-content;
+    padding: 30px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
