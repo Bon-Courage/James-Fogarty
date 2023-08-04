@@ -50,19 +50,23 @@ h3 {
 }
 
 .skills {
-    background-image: url(images/bricks.jpeg);
-    background-size: auto;
+    background-image: url(images/pexels.jpg);
+    background-size: cover;
 }
 
 .projects {
-    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    background-image: url(images/pexels1.jpg);
+    background-size: cover;
+}
+
+.quote {
+    background-image: url(images/pexels2.jpg);
+    background-size: cover;
 }
 
 .contact {
-    background: #1f4037;
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
-    background: linear-gradient(to right, #99f2c8, #1f4037);
-
+    background-image: url(images/pexels3.jpg);
+    background-size: cover;
 }
 
 footer p {
@@ -86,6 +90,38 @@ footer p {
     color: whitesmoke;
     font-size: 40px;
     text-shadow: 2px 2px black;
+}
+
+.cards:hover {
+    background-color: aquamarine;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px black;
+}
+
+.navbar-list .list-item:hover {
+    transform: scale(1.15);
+}
+
+
+.header-picture,
+.welcome-picture {
+    transition: transform .7s ease-in;
+}
+
+.welcome-picture:hover {
+    transform: scale(1.50) rotate(360deg);
+}
+
+.header-picture:hover {
+    transform: scale(1.15) rotate(360deg);
+}
+
+
+
+footer,
+.navbar,
+.welcome-container {
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 /* Flex Controls */
@@ -165,7 +201,7 @@ footer p {
     justify-content: center;
     padding: 0px;
     width: min-content;
-    height: fit-content;
+    height: min-content;
     margin: 20px;
     border-radius: 15%;
     border: solid gold 8px;
@@ -188,7 +224,6 @@ footer p {
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 }
 
 .quote-text {
