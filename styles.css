@@ -29,6 +29,18 @@ h1.welcome-header {
     line-height: 0px;
 }
 
+.skills-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    border: solid gold 8px;
+}
+
+h3 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
 /* Flex Controls */
 
 .navbar {
@@ -50,9 +62,9 @@ h1.welcome-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top right, rgb(41, 10, 45), rgb(245, 220, 249));
+    background-image: url(images/paints.jpg);
     border-bottom: 3px solid black;
-
+    background-size: contain;
 }
 
 .welcome-container {
@@ -77,4 +89,41 @@ h1.welcome-header {
 
 .welcome-button {
     align-self: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bricks.jpeg);
+    padding: 20px;
+    background-size: contain;
+    border-bottom: 3px solid black;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.skills-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 250px;
+    height: fit-content;
+    margin: 20px;
+}
+
+.skills-text {
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
