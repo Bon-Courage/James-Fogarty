@@ -13,18 +13,19 @@
 
 <body>
     <nav class="navbar">
-        <a class="header-picture-container">
-            <img class="header-picture" src="images/myself.jpg" alt="A Photo of James">
-        </a>
+        <div class="header-picture-container">
+            <a href="#top"><img class="header-picture" src="images/myself.jpg" alt="A Photo of James"></a>
+            <h2 class="header-name">James Fogarty</h2>
+        </div>
         <ul class="navbar-list">
-            <li class="list-item">Skills</li>
-            <li class="list-item">Portfolio</li>
-            <li class="list-item">About</li>
-            <li class="list-item">Contact</li>
+            <li class="list-item"><a href="#skills-section">Skills</a></li>
+            <li class="list-item"><a href="#portfolio-section">Portfolio</a></li>
+            <li class="list-item"><a href="#about-section">About</a></li>
+            <li class="list-item"><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="welcome">
+    <div class="welcome" id="welcome-section">
         <div class="welcome-container">
             <div class="welcome-text">
                 <h1 class="welcome-header">Welcome!</h1>
@@ -38,7 +39,7 @@
         </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="skills-section">
         <h2 class="knowledge-heading">What does James know?</h2>
         <div class="skills-container">
             <div class="skills-cards cards"><img class="skills-picture pictures" src="images/css.jpg"
@@ -69,34 +70,34 @@
         </div>
     </div>
 
-    <div class="projects">
-        <h2 class="projects-heading">What has James made?</h2>
-        <div class="projects-container">
-            <div class="projects-cards cards"><img class="projects-picture pictures" src="images/under-construction.jpg"
-                    alt="Placeholder Picture">
+    <div class="portfolio" id="portfolio-section">
+        <h2 class="portfolio-heading">What has James made?</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-cards cards"><img class="portfolio-picture pictures"
+                    src="images/under-construction.jpg" alt="Placeholder Picture">
                 <h3>Come back soon</h3>
-                <p class="projects-text">We're working on it</p>
+                <p class="portfolio-text">We're working on it</p>
             </div>
-            <div class="projects-cards cards"><img class="projects-picture pictures" src="images/under-construction.jpg"
-                    alt="Placeholder Picture">
+            <div class="portfolio-cards cards"><img class="portfolio-picture pictures"
+                    src="images/under-construction.jpg" alt="Placeholder Picture">
                 <h3>Come back soon</h3>
-                <p class="projects-text">We're working on it</p>
+                <p class="portfolio-text">We're working on it</p>
             </div>
-            <div class="projects-cards cards"><img class="projects-picture pictures" src="images/under-construction.jpg"
-                    alt="Placeholder Picture">
+            <div class="portfolio-cards cards"><img class="portfolio-picture pictures"
+                    src="images/under-construction.jpg" alt="Placeholder Picture">
                 <h3>Come back soon</h3>
-                <p class="projects-text">We're working on it</p>
+                <p class="portfolio-text">We're working on it</p>
             </div>
-            <div class="projects-cards cards"><img class="projects-picture pictures" src="images/under-construction.jpg"
-                    alt="Placeholder Picture">
+            <div class="portfolio-cards cards"><img class="portfolio-picture pictures"
+                    src="images/under-construction.jpg" alt="Placeholder Picture">
                 <h3>Come back soon</h3>
-                <p class="projects-text">We're working on it</p>
+                <p class="portfolio-text">We're working on it</p>
             </div>
         </div>
     </div>
 
-    <div class="quote">
-        <p class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum minus nam
+    <div class="about" id="about-section">
+        <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laborum minus nam
             ex quod quasi
             nihil. Amet accusamus est expedita sit, excepturi consequatur sequi quidem vero incidunt deserunt neque
             alias?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quas dignissimos praesentium
@@ -104,10 +105,10 @@
             quam perferendis fugit sed! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, minus
             quas voluptas sed pariatur cumque amet eaque maiores magnam, reprehenderit sapiente temporibus earum.
             Cupiditate pariatur maxime nam harum odit facere!</p>
-        <p class="name">--James Fogarty</p>
+        <p class="about-name">-James Fogarty</p>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact-section">
         <h2 class="contact-header">How can I contact James?</h2>
         <ul class="contact-card">
             <li><img class="logos" src="images/icons8-github-30.png" alt="Github Logo">GitHub:</li>

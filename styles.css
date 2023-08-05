@@ -10,9 +10,17 @@ ul {
     font-size: 24px;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: black;
+}
+
 .header-picture {
     max-width: 50px;
-    max-height: auto;
+    max-height: 50px;
     border-radius: 50%;
     border: solid goldenrod 5px;
 }
@@ -23,6 +31,7 @@ ul {
     border-radius: 50%;
     border: 10px goldenrod solid;
     margin: 1rem;
+    flex: 0 1 0;
 }
 
 
@@ -54,12 +63,12 @@ h3 {
     background-size: cover;
 }
 
-.projects {
+.portfolio {
     background-image: url(images/pexels1.jpg);
     background-size: cover;
 }
 
-.quote {
+.about {
     background-image: url(images/pexels2.jpg);
     background-size: cover;
 }
@@ -75,21 +84,27 @@ footer p {
 }
 
 .contact,
-.quote,
-.projects,
+.about,
+.portfolio,
 .skills,
 .welcome,
 .navbar {
     border-bottom: 3px solid black;
 }
 
+.about-name,
+.header-name,
 .welcome-header,
 .knowledge-heading,
-.projects-heading {
+.portfolio-heading {
     font-family: "Titan One";
     color: whitesmoke;
     font-size: 40px;
     text-shadow: 2px 2px black;
+}
+
+h2 {
+    margin: 0px;
 }
 
 .cards:hover {
@@ -117,17 +132,35 @@ footer p {
 }
 
 
-
 footer,
 .navbar,
 .welcome-container {
     background: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
+.logos {
+    margin-right: 1rem;
+}
+
+.welcome,
+.skills,
+.portfolio,
+.about,
+.contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 /* Flex Controls */
 
 
-.navbar {
+.header-picture-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,6 +174,7 @@ footer,
 
 .navbar-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .welcome {
@@ -158,7 +192,6 @@ footer,
     border: rgb(21, 145, 187) solid 5px;
     max-width: 60%;
     border-radius: 200px;
-    margin: 128px 78px;
     min-width: min-content;
     padding: 40px;
     background: linear-gradient(to right, #00c9ff, #92fe9d);
@@ -176,16 +209,15 @@ footer,
 }
 
 .skills,
-.projects {
+.portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .skills-container,
-.projects-container {
+.portfolio-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,7 +226,7 @@ footer,
 }
 
 .skills-cards,
-.projects-cards {
+.portfolio-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +241,7 @@ footer,
 }
 
 .skills-text,
-.projects-text {
+.portfolio-text {
     align-self: center;
     text-align: center;
     margin: 0;
@@ -218,15 +250,14 @@ footer,
     margin-inline: 5px;
 }
 
-.quote {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px;
 }
 
-.quote-text {
+.about-text {
     font-size: 40px;
     margin: 0;
 }
@@ -249,9 +280,6 @@ footer,
     align-items: center;
 }
 
-.logos {
-    margin-right: 1rem;
-}
 
 footer {
     display: flex;
