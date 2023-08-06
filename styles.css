@@ -18,20 +18,16 @@ nav a:visited {
     color: black;
 }
 
+button {
+    width: 100px;
+    align-self: center;
+}
+
 .header-picture {
     max-width: 50px;
     max-height: 50px;
     border-radius: 50%;
     border: solid goldenrod 5px;
-}
-
-.welcome-picture {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    border: 10px goldenrod solid;
-    margin: 1rem;
-    flex: 0 1 0;
 }
 
 
@@ -188,12 +184,14 @@ nav {
 .welcome-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: rgb(21, 145, 187) solid 5px;
-    max-width: 60%;
+    align-content: center;
     border-radius: 200px;
-    min-width: min-content;
+    max-width: 50%;
+    gap: 50px;
+    width: 60%;
     padding: 40px;
+    flex-wrap: wrap;
+    border: rgb(21, 145, 187) solid 5px;
     background: linear-gradient(to right, #00c9ff, #92fe9d);
     box-shadow: 0px 0px 30px black;
 }
@@ -202,10 +200,16 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    flex: 0 1 400px;
 }
 
-.welcome-button {
-    align-self: center;
+.welcome-picture {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px goldenrod solid;
+    margin: 1rem;
+    flex: 0 1 300px;
 }
 
 .skills,
